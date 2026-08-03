@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merhan Mahmoud | AI Engineer & Automation Specialist</title>
+    <meta name="description" content="Portfolio of Merhan Mahmoud - Artificial Intelligence Engineer & Master's Researcher specializing in AI Agents, n8n Workflow Automation, LLMs, and RAG systems.">
+    <meta name="keywords" content="AI Engineer, n8n Automation, LLM Applications, AI Agents, Prompt Engineering, RAG, Merhan Mahmoud">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas Animation -->
+    <canvas id="neural-canvas"></canvas>
+    <div class="glow-sphere sphere-1"></div>
+    <div class="glow-sphere sphere-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-brand">
+                <span class="brand-icon"><i class="fa-solid fa-brain"></i></span>
+                <span class="brand-text">Merhan<span class="brand-accent">.AI</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" data-en="About" data-ar="عني">About</a>
+                <a href="#skills" class="nav-link" data-en="Skills" data-ar="المهارات">Skills</a>
+                <a href="#workflow-sim" class="nav-link" data-en="n8n Simulator" data-ar="محاكي n8n">n8n Simulator</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
+                <a href="#playground" class="nav-link" data-en="AI Agent Chat" data-ar="مساعد AI">AI Agent Chat</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معي">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="lang-toggle-btn" id="langToggleBtn" title="Switch Language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="langText">العربية</span>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm" data-en="Hire Me" data-ar="وظفني">Hire Me</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        <span data-en="Available for: Full-time | AI Agent Projects | Research Collaborations" data-ar="متاحة لـ: عمل دوام كامل | مشاريع AI Agents | التعاون البحثي">Available for: Full-time | AI Agent Projects | Research Collaborations</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-en="Hello, I'm" data-ar="أهلاً، أنا">Hello, I'm</span> 
+                        <span class="gradient-text">Merhan Mahmoud</span>
+                    </h1>
+
+                    <h2 class="hero-headline" id="typing-headline">
+                        AI Engineer | Master's Researcher | AI Agent Developer | n8n Automation | LLM Applications
+                    </h2>
+
+                    <p class="hero-summary" data-en="Artificial Intelligence Engineer and Master's Researcher with over 3 years of experience teaching Programming and AI. I build practical, scalable AI agents, intelligent workflow automations (n8n), and LLM-powered applications that deliver high business impact." data-ar="مهندسة ذكاء اصطناعي وباحثة ماجستير تتمتع بخبرة تزيد عن 3 سنوات في تدريس البرمجة والذكاء الاصطناعي. متخصصة في بناء وكلاء الذكاء الاصطناعي (AI Agents)، وأتمتة مسارات العمل الذكية (n8n)، وتطبيقات نماذج اللغة الكبيرة (LLMs) لتحقيق أقصى كفاءة للمؤسسات.">
+                        Artificial Intelligence Engineer and Master's Researcher with over 3 years of experience teaching Programming and AI. I build practical, scalable AI agents, intelligent workflow automations (n8n), and LLM-powered applications that deliver high business impact.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span class="tag"><i class="fa-solid fa-robot"></i> AI Agents</span>
+                        <span class="tag"><i class="fa-solid fa-diagram-project"></i> n8n Workflows</span>
+                        <span class="tag"><i class="fa-solid fa-microchip"></i> LLMs & RAG</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> Python & APIs</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="Merhan_Mahmoud_CV.pdf" target="_blank" download="Merhan_Mahmoud_CV.pdf" type="application/pdf" class="btn btn-primary" data-en="Download CV" data-ar="تحميل السيرة الذاتية">
+                            <i class="fa-solid fa-file-arrow-down"></i> <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+                        </a>
+                        <a href="#workflow-sim" class="btn btn-glass" data-en="n8n AI Workflow" data-ar="محاكي n8n">
+                            <i class="fa-solid fa-play"></i> <span data-en="n8n AI Workflow" data-ar="محاكي n8n">n8n AI Workflow</span>
+                        </a>
+                        <a href="#playground" class="btn btn-glass" data-en="Chat with My AI" data-ar="تحدث مع وكيل AI">
+                            <i class="fa-solid fa-comments"></i> <span data-en="Chat with My AI" data-ar="تحدث مع وكيل AI">Chat with My AI</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="card-glass hero-card">
+                        <div class="card-header-bar">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="card-title-bar">merhan_ai_agent_pipeline.json</span>
+                        </div>
+                        <div class="profile-avatar-wrapper">
+                            <div class="avatar-ring">
+                                <div class="avatar-inner">
+                                    <i class="fa-solid fa-user-astronaut"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-card-stats">
+                            <div class="mini-stat">
+                                <span class="num">3+</span>
+                                <span class="lbl" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="num">M.Sc</span>
+                                <span class="lbl" data-en="AI Researcher" data-ar="باحثة ماجستير">AI Researcher</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="num">100%</span>
+                                <span class="lbl" data-en="Autonomous AI" data-ar="أتمتة ذكية">Autonomous AI</span>
+                            </div>
+                        </div>
+                        <div class="hero-card-footer">
+                            <div class="status-indicator">
+                                <i class="fa-solid fa-bolt glow-icon"></i>
+                                <span data-en="n8n Engine: Active & Executing" data-ar="محرك n8n: نشط ويعمل">n8n Engine: Active & Executing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" data-target="3">3+</h3>
+                        <p class="stat-label" data-en="Years Teaching AI & Code" data-ar="سنوات تدريس البرمجة والذكاء الاصطناعي">Years Teaching AI & Code</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" data-target="50">50+</h3>
+                        <p class="stat-label" data-en="n8n Workflows Engineered" data-ar="مسارات n8n مُطورة">n8n Workflows Engineered</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" data-target="15">15+</h3>
+                        <p class="stat-label" data-en="Autonomous AI Agent Pipelines" data-ar="أنظمة وكلاء ذكاء اصطناعي">Autonomous AI Agent Pipelines</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" data-target="1500">1500+</h3>
+                        <p class="stat-label" data-en="Students & Engineers Mentored" data-ar="طلاب ومطورين تم تدريبهم">Students & Engineers Mentored</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="Get To Know Me" data-ar="تعرف عليّ">Get To Know Me</span>
+                    <h2 class="section-title" data-en="About Me" data-ar="عني">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <p class="lead-text" data-en="I am an Artificial Intelligence Engineer and Master's researcher with over 3 years of experience teaching Programming and Artificial Intelligence." data-ar="أنا مهندسة ذكاء اصطناعي وباحثة ماجستير أمتلك أكثر من 3 سنوات من الخبرة في تدريس البرمجة ومفاهيم الذكاء الاصطناعي.">
+                            I am an Artificial Intelligence Engineer and Master's researcher with over 3 years of experience teaching Programming and Artificial Intelligence.
+                        </p>
+                        <p data-en="My current focus is on developing autonomous AI Agents, intelligent workflow automation, and LLM-powered applications using modern AI tools like n8n, Python, and REST APIs. I enjoy building practical, scalable AI solutions that automate complex business processes and deliver measurable impact." data-ar="يركز عملي الحالي على تطوير وكلاء الذكاء الاصطناعي المستقلين (AI Agents)، وتصميم أتمتة مسارات العمل الذكية، وبناء تطبيقات تعتمد على نماذج اللغة الكبيرة (LLMs) باستخدام أدوات حديثة مثل n8n و Python بربط REST APIs. أشغف ببناء حلول عملية وقابلة للتوسع تُحدث أثراً ملموساً ورفع كفاءة العمليات.">
+                            My current focus is on developing autonomous AI Agents, intelligent workflow automation, and LLM-powered applications using modern AI tools like n8n, Python, and REST APIs. I enjoy building practical, scalable AI solutions that automate complex business processes and deliver measurable impact.
+                        </p>
+
+                        <div class="about-pillars">
+                            <div class="pillar">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <div>
+                                    <h4 data-en="3+ Years Educator" data-ar="مُدرسة لأكثر من 3 سنوات">3+ Years Educator</h4>
+                                    <p data-en="Mentored over 1,500+ students and engineers in Python, AI & automation." data-ar="تدريب أكثر من 1500+ طالب ومطور في بايثون والذكاء الاصطناعي والأتمتة.">Mentored over 1,500+ students and engineers in Python, AI & automation.</p>
+                                </div>
+                            </div>
+                            <div class="pillar">
+                                <i class="fa-solid fa-atom"></i>
+                                <div>
+                                    <h4 data-en="Master's Researcher" data-ar="باحثة ماجستير">Master's Researcher</h4>
+                                    <p data-en="Deep research into state-of-the-art AI, neural networks & LLM efficiency." data-ar="أبحاث متعمقة في تقنيات الذكاء الاصطناعي الحديثة وكفاءة النماذج اللغوية.">Deep research into state-of-the-art AI, neural networks & LLM efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="pillar">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <div>
+                                    <h4 data-en="Workflow Automation Specialist" data-ar="متخصصة أتمتة مسارات العمل">Workflow Automation Specialist</h4>
+                                    <p data-en="Expert in n8n, AI Agent tools, RAG architectures & API integration." data-ar="خبير في n8n، أدوات وكلاء AI، معماريات RAG وربط واجهات البرمجة APIs.">Expert in n8n, AI Agent tools, RAG architectures & API integration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card-side">
+                        <div class="card-glass shadow-glow">
+                            <h3 class="card-inner-title" data-en="Professional Summary" data-ar="الملخص المهني">Professional Summary</h3>
+                            <ul class="summary-list">
+                                <li>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span data-en="Designing AI-powered systems & autonomous workflow agents." data-ar="تصميم أنظمة ذكاء اصطناعي ووكلاء مسارات عمل مستقلة.">Designing AI-powered systems & autonomous workflow agents.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span data-en="Integrating REST APIs and webhooks into seamless n8n automation pipelines." data-ar="ربط واجهات REST APIs و Webhooks بأتمتة n8n سلسة.">Integrating REST APIs and webhooks into seamless n8n automation pipelines.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span data-en="Implementing RAG (Retrieval-Augmented Generation) for custom business knowledge bases." data-ar="تطبيق تقنية RAG للبحث والاسترجاع الذكي من قواعد المعرفة.">Implementing RAG (Retrieval-Augmented Generation) for custom business knowledge bases.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span data-en="Advanced Prompt Engineering for reliable, structured LLM outputs." data-ar="هندسة أوامر متقدمة (Prompt Engineering) لنتائج دقيقة ومنظمة.">Advanced Prompt Engineering for reliable, structured LLM outputs.</span>
+                                </li>
+                            </ul>
+                            <div class="summary-download">
+                                <a href="Merhan_Mahmoud_CV.pdf" target="_blank" download="Merhan_Mahmoud_CV.pdf" type="application/pdf" class="btn btn-outline btn-full" data-en="Download Academic & Technical CV" data-ar="تحميل السيرة الذاتية">
+                                    <i class="fa-solid fa-file-arrow-down"></i> <span data-en="Download Academic & Technical CV" data-ar="تحميل السيرة الذاتية">Download Academic & Technical CV</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <section class="section-subtitle" data-en="Technical Capabilities" data-ar="القدرات التقنية">Technical Capabilities</section>
+                    <h2 class="section-title" data-en="Core Skills & Expertise" data-ar="المهارات والخبرات الأساسية">Core Skills & Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- AI Agents & LLMs -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-robot category-icon"></i>
+                            <h3 data-en="AI Agents & LLMs" data-ar="وكلاء AI والنماذج اللغوية">AI Agents & LLMs</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <span>AI Agents</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Large Language Models (LLMs)</span>
+                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Retrieval-Augmented Generation (RAG)</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Prompt Engineering</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Automation & Workflows -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-diagram-project category-icon"></i>
+                            <h3 data-en="n8n & Workflow Automation" data-ar="n8n وأتمتة العمليات">n8n & Workflow Automation</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <span>n8n Workflow Automation</span>
+                                <div class="bar"><div class="fill" style="width: 96%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>AI Automation</span>
+                                <div class="bar"><div class="fill" style="width: 94%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Workflow Design</span>
+                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>API Integration</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Engineering & Tools -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3 data-en="Development & Tools" data-ar="التطوير والأدوات">Development & Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <span>Python</span>
+                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>REST APIs & Webhooks</span>
+                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Git & Version Control</span>
+                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-pill">
+                                <span>Vector Databases</span>
+                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive n8n AI Workflow Simulator -->
+        <section class="section workflow-section" id="workflow-sim">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="Live Simulation" data-ar="محاكاة تفاعلية">Live Simulation</span>
+                    <h2 class="section-title" data-en="Interactive n8n AI Agent Simulator" data-ar="محاكي مسار عمل n8n ذكي">Interactive n8n AI Agent Simulator</h2>
+                    <p class="section-desc" data-en="Click 'Execute Workflow' below to visualize how an autonomous n8n pipeline processes incoming user requests with RAG search, LLM decision making, and REST API triggers." data-ar="انقر على 'تشغيل مسار العمل' أدناه لرؤية كيف يحلل مسار n8n الذكي طلبات المستخدمين مع استرجاع البيانات واتخاذ القرار وربط الـ APIs.">
+                        Click 'Execute Workflow' below to visualize how an autonomous n8n pipeline processes incoming user requests with RAG search, LLM decision making, and REST API triggers.
+                    </p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="workflow-visualizer-box card-glass">
+                    <div class="sim-toolbar">
+                        <div class="sim-status">
+                            <span class="sim-dot" id="simDot"></span>
+                            <span id="simStatusText" data-en="Status: Ready to Execute" data-ar="الحالة: جاهز للتشغيل">Status: Ready to Execute</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" id="runSimBtn">
+                            <i class="fa-solid fa-play"></i> <span data-en="Execute Workflow" data-ar="تشغيل مسار العمل">Execute Workflow</span>
+                        </button>
+                    </div>
+
+                    <!-- Visual Nodes Network -->
+                    <div class="workflow-nodes-container">
+                        <!-- Node 1: Webhook Trigger -->
+                        <div class="wf-node" id="node-1">
+                            <div class="node-icon bg-purple"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="node-title">Webhook Trigger</div>
+                            <div class="node-sub">Inbound Event / Query</div>
+                            <div class="node-status-badge">Idle</div>
+                        </div>
+
+                        <div class="wf-connector"><div class="pulse-line" id="line-1"></div></div>
+
+                        <!-- Node 2: RAG Vector Search -->
+                        <div class="wf-node" id="node-2">
+                            <div class="node-icon bg-cyan"><i class="fa-solid fa-database"></i></div>
+                            <div class="node-title">RAG Vector DB</div>
+                            <div class="node-sub">Knowledge Retrieval</div>
+                            <div class="node-status-badge">Idle</div>
+                        </div>
+
+                        <div class="wf-connector"><div class="pulse-line" id="line-2"></div></div>
+
+                        <!-- Node 3: LLM Reasoning Agent -->
+                        <div class="wf-node" id="node-3">
+                            <div class="node-icon bg-emerald"><i class="fa-solid fa-brain"></i></div>
+                            <div class="node-title">LLM Agent (GPT-4o)</div>
+                            <div class="node-sub">Prompt & Action Decision</div>
+                            <div class="node-status-badge">Idle</div>
+                        </div>
+
+                        <div class="wf-connector"><div class="pulse-line" id="line-3"></div></div>
+
+                        <!-- Node 4: REST API Action & Response -->
+                        <div class="wf-node" id="node-4">
+                            <div class="node-icon bg-amber"><i class="fa-solid fa-paper-plane"></i></div>
+                            <div class="node-title">REST API Action</div>
+                            <div class="node-sub">CRM / Slack / Email Output</div>
+                            <div class="node-status-badge">Idle</div>
+                        </div>
+                    </div>
+
+                    <!-- Output Console Log -->
+                    <div class="sim-console">
+                        <div class="console-header">
+                            <span><i class="fa-solid fa-terminal"></i> n8n Execution Console Log</span>
+                            <button id="clearConsoleBtn" class="btn-text">Clear</button>
+                        </div>
+                        <div class="console-body" id="consoleBody">
+                            <div class="log-line">[SYSTEM] n8n AI Agent Workflow Engine initialized. Press "Execute Workflow" to test.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Case Studies Showcase -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="Featured Solutions" data-ar="مشاريع ومجموعات عمل">Featured Solutions</span>
+                    <h2 class="section-title" data-en="AI & Automation Projects" data-ar="مشاريع الذكاء الاصطناعي والأتمتة">AI & Automation Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card-glass">
+                        <div class="project-badge"><i class="fa-solid fa-robot"></i> AI Agent</div>
+                        <h3 class="project-title" data-en="Autonomous Customer Support & Sales Agent" data-ar="وكيل خدمة عملاء ومبيعات مستقل">Autonomous Customer Support & Sales Agent</h3>
+                        <p class="project-desc" data-en="Designed an autonomous multi-agent system powered by n8n and LLMs that handles user support queries, retrieves real-time inventory via APIs, and qualifies sales leads." data-ar="بناء نظام وكلاء متعدد المهام يعتمد على n8n وLLMs للرد التلقائي على استفسارات العملاء وجلب البيانات المباشرة عبر APIs وتقييم المبيعات.">
+                            Designed an autonomous multi-agent system powered by n8n and LLMs that handles user support queries, retrieves real-time inventory via APIs, and qualifies sales leads.
+                        </p>
+                        <div class="project-tech">
+                            <span>n8n</span>
+                            <span>LLM</span>
+                            <span>RAG</span>
+                            <span>REST API</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card-glass">
+                        <div class="project-badge"><i class="fa-solid fa-diagram-project"></i> n8n Automation</div>
+                        <h3 class="project-title" data-en="Enterprise Lead Qualification & CRM Automation Pipeline" data-ar="مسار أتمتة إدارة العملاء والتقييم الالي">Enterprise Lead Qualification & CRM Automation Pipeline</h3>
+                        <p class="project-desc" data-en="Built an intelligent n8n workflow that parses incoming emails, evaluates company profile alignment using OpenAI prompt templates, and updates CRM records seamlessly." data-ar="تطوير مسار عمل n8n ذكي يحلل البريد الإلكتروني الوارد ويقيم ملائمة بيانات الشركات باستخدام أوامر OpenAI ويحدث بيانات الـ CRM بشكل فوري.">
+                            Built an intelligent n8n workflow that parses incoming emails, evaluates company profile alignment using OpenAI prompt templates, and updates CRM records seamlessly.
+                        </p>
+                        <div class="project-tech">
+                            <span>n8n</span>
+                            <span>OpenAI</span>
+                            <span>Webhooks</span>
+                            <span>HubSpot/Notion API</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card-glass">
+                        <div class="project-badge"><i class="fa-solid fa-database"></i> RAG System</div>
+                        <h3 class="project-title" data-en="Custom Knowledge Base RAG Assistant" data-ar="مساعد البحث الذكي لقواعد المعرفة (RAG)">Custom Knowledge Base RAG Assistant</h3>
+                        <p class="project-desc" data-en="Created a Retrieval-Augmented Generation pipeline converting un-structured PDF documentation into vector embeddings for accurate, hallucination-free AI answers." data-ar="إنشاء نظام استرجاع معلومات ذكي يحول المستندات والكتيبات إلى المتجهات لتقديم إجابات موثوقة بدون هلاوس الذكاء الاصطناعي.">
+                            Created a Retrieval-Augmented Generation pipeline converting un-structured PDF documentation into vector embeddings for accurate, hallucination-free AI answers.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Vector DB</span>
+                            <span>LangChain</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive AI Agent Chat Widget -->
+        <section class="section playground-section" id="playground">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="Interactive Playground" data-ar="منطقة التفاعل المباشر">Interactive Playground</span>
+                    <h2 class="section-title" data-en="Ask Merhan's AI Assistant" data-ar="تحدث مع مساعد مرهان الذكي">Ask Merhan's AI Assistant</h2>
+                    <p class="section-desc" data-en="Test this live interactive AI agent to learn more about Merhan's research, n8n capabilities, teaching background, and project availability." data-ar="جرب هذا الوكيل التفاعلي المباشر للتعرف أكثر على أبحاث مرهان وخبرات n8n وإمكانية التعاون معها.">
+                        Test this live interactive AI agent to learn more about Merhan's research, n8n capabilities, teaching background, and project availability.
+                    </p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="chat-widget-box card-glass">
+                    <div class="chat-header">
+                        <div class="chat-agent-info">
+                            <div class="agent-avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div>
+                                <h4 class="agent-name">Merhan AI Assistant</h4>
+                                <span class="agent-status"><span class="dot-green"></span> Online & Autonomous</span>
+                            </div>
+                        </div>
+                        <span class="badge-n8n"><i class="fa-solid fa-bolt"></i> n8n Powered</span>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-msg msg-ai">
+                            <div class="msg-content">
+                                👋 Hi there! I'm Merhan Mahmoud's AI Assistant. How can I help you today? You can choose a quick question below or type your own!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-suggestions">
+                        <button class="suggest-btn" data-question="What is Merhan's background and experience?">🎓 What is Merhan's experience?</button>
+                        <button class="suggest-btn" data-question="How does Merhan use n8n for AI Automation?">⚙️ How does she use n8n for AI?</button>
+                        <button class="suggest-btn" data-question="What are Merhan's core skills?">🛠️ Core Skills overview</button>
+                        <button class="suggest-btn" data-question="How can I contact Merhan for a project?">📩 How to contact for a project?</button>
+                    </div>
+
+                    <form class="chat-input-area" id="chatForm">
+                        <input type="text" id="chatInput" placeholder="Type a question about Merhan's AI expertise..." autocomplete="off">
+                        <button type="submit" class="btn btn-primary btn-icon"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="What I Deliver" data-ar="ما الذي أقدمه">What I Deliver</span>
+                    <h2 class="section-title" data-en="Services & Capabilities" data-ar="الخدمات والحلول">Services & Capabilities</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card card-glass">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3 data-en="AI Agent Development" data-ar="تطوير وكلاء الذكاء الاصطناعي">AI Agent Development</h3>
+                        <p data-en="Building custom, autonomous AI Agents capable of reasoning, task decomposition, memory handling, and multi-tool execution." data-ar="تطوير وكلاء ذكاء اصطناعي مخصصين قادرين على التفكير وتفكيك المهام واستخدام الأدوات المختلفة بحرية.">
+                            Building custom, autonomous AI Agents capable of reasoning, task decomposition, memory handling, and multi-tool execution.
+                        </p>
+                    </div>
+
+                    <div class="service-card card-glass">
+                        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3 data-en="n8n Intelligent Automation" data-ar="أتمتة الأعمال الذكية عبر n8n">n8n Intelligent Automation</h3>
+                        <p data-en="Designing automated workflows that connect webhooks, databases, external REST APIs, and LLM nodes for scalable business efficiency." data-ar="تصميم مسارات عمل مؤتمتة تربط قاعدة البيانات وواجهات البرمجة APIs ونماذج AI لرفع كفاءة المؤسسة.">
+                            Designing automated workflows that connect webhooks, databases, external REST APIs, and LLM nodes for scalable business efficiency.
+                        </p>
+                    </div>
+
+                    <div class="service-card card-glass">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 data-en="LLM & RAG Systems" data-ar="أنظمة RAG ونماذج اللغة">LLM & RAG Systems</h3>
+                        <p data-en="Developing Retrieval-Augmented Generation solutions that empower models with your custom company data securely and accurately." data-ar="بناء أنظمة RAG تمكّن نماذج الذكاء الاصطناعي من الإجابة بدقة بناءً على بياناتك ومستنداتك الخاصة.">
+                            Developing Retrieval-Augmented Generation solutions that empower models with your custom company data securely and accurately.
+                        </p>
+                    </div>
+
+                    <div class="service-card card-glass">
+                        <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3 data-en="AI & Programming Instruction" data-ar="تدريب وتدريس الذكاء الاصطناعي">AI & Programming Instruction</h3>
+                        <p data-en="Over 3 years teaching experience delivering comprehensive training in Python, AI principles, workflow automation, and prompt engineering." data-ar="خبرة تزيد عن 3 سنوات في إعطاء دورات تدريبية متخصصة في بايثون، أساسيات الذكاء الاصطناعي، وهندسة الأوامر.">
+                            Over 3 years teaching experience delivering comprehensive training in Python, AI principles, workflow automation, and prompt engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-en="Let's Connect" data-ar="تواصل معي">Let's Connect</span>
+                    <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل لبدء مشروعك">Get In Touch</h2>
+                    <p class="section-desc" data-en="Interested in building AI agents, implementing n8n workflows, or discussing research collaboration? Send me a message below!" data-ar="هل ترغب في بناء وكلاء AI، أو تطبيق مسارات عمل n8n، أو مناقشة تعاون بحثي؟ أرسل لي رسالة أدناه!">
+                        Interested in building AI agents, implementing n8n workflows, or discussing research collaboration? Send me a message below!
+                    </p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card card-glass">
+                        <h3 data-en="Contact Information" data-ar="معلومات التواصل">Contact Information</h3>
+                        <p data-en="I am open to full-time AI Engineering roles, research opportunities, and high-impact n8n automation consulting." data-ar="أرحب بفرص العمل كمهندسة ذكاء اصطناعي، والفرص البحثية، واستشارات أتمتة الأعمال n8n.">
+                            I am open to full-time AI Engineering roles, research opportunities, and high-impact n8n automation consulting.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="label" data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+                                    <a href="mailto:merhanmahmoud90@gmail.com" class="val">merhanmahmoud90@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="label" data-en="Specialization" data-ar="التخصص">Specialization</span>
+                                    <span class="val">AI Engineering & n8n Automation</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+                                <div>
+                                    <span class="label" data-en="Availability" data-ar="الفرص المتاحة">Availability</span>
+                                    <span class="val">Full-time | AI Agent Projects | Research Collaborations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/merhan-mahmoud" target="_blank" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:merhanmahmoud90@gmail.com" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card card-glass">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-en="Your Name" data-ar="الاسم الكريم">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. Sarah Ahmed">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-en="Your Email" data-ar="البريد الإلكتروني">Your Email</label>
+                                <input type="email" id="email" required placeholder="name@company.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" data-en="Project / Inquiry Type" data-ar="نوع الاستفسار / المشروع">Project / Inquiry Type</label>
+                                <select id="subject" class="custom-select">
+                                    <option value="AI Agent Development">AI Agent Development</option>
+                                    <option value="n8n Workflow Automation">n8n Workflow Automation</option>
+                                    <option value="LLM / RAG Integration">LLM / RAG Integration</option>
+                                    <option value="AI & Code Teaching / Mentorship">AI & Code Teaching / Mentorship</option>
+                                    <option value="Research & Other">Research & Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Describe your automation goal or AI requirement..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fa-solid fa-paper-plane"></i> <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+                            </button>
+                            <div class="form-response" id="formResponse"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="nav-brand">
+                    <span class="brand-icon"><i class="fa-solid fa-brain"></i></span>
+                    <span class="brand-text">Merhan<span class="brand-accent">.AI</span></span>
+                </a>
+                <p data-en="Architecting Intelligent AI Agents and Automated n8n Workflows for maximum operational excellence." data-ar="بناء وتصميم وكلاء ذكاء اصطناعي ومسارات عمل n8n ذكية لتحقيق أقصى كفاءة تشغيلية.">
+                    Architecting Intelligent AI Agents and Automated n8n Workflows for maximum operational excellence.
+                </p>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year">2026</span> Merhan Mahmoud. All rights reserved. Built with AI & Passion.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
