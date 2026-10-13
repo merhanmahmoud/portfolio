@@ -10,10 +10,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -28,7 +31,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="nav-brand">
-                <span class="brand-icon"><i class="fa-solid fa-brain"></i></span>
+                <img src="assets/logo.png" alt="Merhan Mahmoud Logo" class="brand-logo">
                 <span class="brand-text">Merhan<span class="brand-accent">.AI</span></span>
             </a>
             
@@ -110,7 +113,7 @@
                         <div class="profile-avatar-wrapper">
                             <div class="avatar-ring">
                                 <div class="avatar-inner">
-                                    <i class="fa-solid fa-user-astronaut"></i>
+                                    <img src="profile.jpg" alt="Merhan Mahmoud" class="profile-img">
                                 </div>
                             </div>
                         </div>
@@ -166,7 +169,7 @@
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
                     <div class="stat-info">
-                        <h3 class="stat-number" data-target="1500">1500+</h3>
+                        <h3 class="stat-number" data-target="3000">3000+</h3>
                         <p class="stat-label" data-en="Students & Engineers Mentored" data-ar="طلاب ومطورين تم تدريبهم">Students & Engineers Mentored</p>
                     </div>
                 </div>
@@ -196,7 +199,7 @@
                                 <i class="fa-solid fa-chalkboard-user"></i>
                                 <div>
                                     <h4 data-en="3+ Years Educator" data-ar="مُدرسة لأكثر من 3 سنوات">3+ Years Educator</h4>
-                                    <p data-en="Mentored over 1,500+ students and engineers in Python, AI & automation." data-ar="تدريب أكثر من 1500+ طالب ومطور في بايثون والذكاء الاصطناعي والأتمتة.">Mentored over 1,500+ students and engineers in Python, AI & automation.</p>
+                                    <p data-en="Mentored over 3,000+ students and engineers in Python, AI & automation." data-ar="تدريب أكثر من 3000+ طالب ومطور في بايثون والذكاء الاصطناعي والأتمتة.">Mentored over 3,000+ students and engineers in Python, AI & automation.</p>
                                 </div>
                             </div>
                             <div class="pillar">
@@ -252,86 +255,257 @@
         <section class="section skills-section" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <section class="section-subtitle" data-en="Technical Capabilities" data-ar="القدرات التقنية">Technical Capabilities</section>
+                    <span class="section-subtitle" data-en="Technical Capabilities" data-ar="القدرات التقنية">Technical Capabilities</span>
                     <h2 class="section-title" data-en="Core Skills & Expertise" data-ar="المهارات والخبرات الأساسية">Core Skills & Expertise</h2>
+                    <p class="section-desc" data-en="Hands-on engineering expertise in autonomous AI agents, enterprise n8n workflow automations, and production RAG systems." data-ar="خبرات تطبيقية وهندسية في بناء وكلاء الذكاء الاصطناعي، وأتمتة مسارات n8n المعقدة، وهندسة أنظمة RAG المتقدمة.">
+                        Hands-on engineering expertise in autonomous AI agents, enterprise n8n workflow automations, and production RAG systems.
+                    </p>
                     <div class="title-underline"></div>
                 </div>
 
                 <div class="skills-grid">
-                    <!-- AI Agents & LLMs -->
+                    <!-- Category 1: AI Agents & LLMs -->
                     <div class="skill-category-card">
                         <div class="category-header">
-                            <i class="fa-solid fa-robot category-icon"></i>
-                            <h3 data-en="AI Agents & LLMs" data-ar="وكلاء AI والنماذج اللغوية">AI Agents & LLMs</h3>
+                            <div class="category-icon-box bg-purple-glow">
+                                <i class="fa-solid fa-robot category-icon"></i>
+                            </div>
+                            <div>
+                                <h3 data-en="AI Agents & LLMs" data-ar="وكلاء AI والنماذج اللغوية">AI Agents & LLMs</h3>
+                                <span class="category-badge" data-en="Core Specialization" data-ar="التخصص الأساسي">Core Specialization</span>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-pill">
-                                <span>AI Agents</span>
-                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                        <div class="skill-cards-list">
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Autonomous AI Agents" data-ar="وكلاء الذكاء الاصطناعي">Autonomous AI Agents</h4>
+                                        <span class="skill-level-tag tag-cyan" data-en="Specialized" data-ar="تخصص متقدم">Specialized</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Multi-tool execution, memory persistence, reasoning loops & autonomous task delegation." data-ar="تفكير متعدد الأدوات، حفظ سياق المحادثة بالذاكرة وتفويض المهام الذاتي.">Multi-tool execution, memory persistence, reasoning loops & autonomous task delegation.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Groq</span>
+                                    <span>OpenAI</span>
+                                    <span>Simple Memory</span>
+                                    <span>ReAct Loop</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Large Language Models (LLMs)</span>
-                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Retrieval-Augmented Generation (RAG)" data-ar="أنظمة RAG واسترجاع المعرفة">Retrieval-Augmented Generation (RAG)</h4>
+                                        <span class="skill-level-tag tag-emerald" data-en="Production" data-ar="تطبيق عملي">Production</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Document parsing, recursive chunking, vector indexing & hallucination-free knowledge retrieval." data-ar="تجزئة المستندات، توليد المتجهات، واسترجاع المعرفة الموثوقة بدون هلاوس.">Document parsing, recursive chunking, vector indexing & hallucination-free knowledge retrieval.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Pinecone</span>
+                                    <span>Cohere</span>
+                                    <span>Text Splitter</span>
+                                    <span>Vector Search</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Retrieval-Augmented Generation (RAG)</span>
-                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Large Language Models (LLMs)" data-ar="نماذج اللغة الكبيرة (LLMs)">Large Language Models (LLMs)</h4>
+                                        <span class="skill-level-tag tag-purple" data-en="Advanced" data-ar="متقدم">Advanced</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Model evaluation, low-latency inference routing, temperature tuning & contextual alignment." data-ar="تقييم النماذج، تسريع الاستدلال، ضبط المعايير ومواءمة السياق.">Model evaluation, low-latency inference routing, temperature tuning & contextual alignment.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Llama 3</span>
+                                    <span>GPT-4o</span>
+                                    <span>Groq API</span>
+                                    <span>Context Window</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Prompt Engineering</span>
-                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-sliders"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Prompt Engineering" data-ar="هندسة الأوامر (Prompting)">Prompt Engineering</h4>
+                                        <span class="skill-level-tag tag-amber" data-en="Expert" data-ar="احترافي">Expert</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Structured JSON formatting, few-shot prompting, system instructions & output guardrails." data-ar="تنسيق مخرجات JSON الصارمة، أمثلة Few-Shot، وحواجز أمان المخرجات.">Structured JSON formatting, few-shot prompting, system instructions & output guardrails.</p>
+                                <div class="skill-tech-chips">
+                                    <span>JSON Mode</span>
+                                    <span>Few-Shot</span>
+                                    <span>System Prompts</span>
+                                    <span>Guardrails</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Automation & Workflows -->
+                    <!-- Category 2: n8n & Workflow Automation -->
                     <div class="skill-category-card">
                         <div class="category-header">
-                            <i class="fa-solid fa-diagram-project category-icon"></i>
-                            <h3 data-en="n8n & Workflow Automation" data-ar="n8n وأتمتة العمليات">n8n & Workflow Automation</h3>
+                            <div class="category-icon-box bg-cyan-glow">
+                                <i class="fa-solid fa-diagram-project category-icon"></i>
+                            </div>
+                            <div>
+                                <h3 data-en="n8n & Workflow Automation" data-ar="n8n وأتمتة مسارات العمل">n8n & Workflow Automation</h3>
+                                <span class="category-badge" data-en="High-Impact Automation" data-ar="أتمتة الأعمال">High-Impact Automation</span>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-pill">
-                                <span>n8n Workflow Automation</span>
-                                <div class="bar"><div class="fill" style="width: 96%;"></div></div>
+                        <div class="skill-cards-list">
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="n8n Workflow Engineering" data-ar="هندسة مسارات n8n">n8n Workflow Engineering</h4>
+                                        <span class="skill-level-tag tag-cyan" data-en="Specialized" data-ar="تخصص متقدم">Specialized</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Architecting resilient 50+ enterprise pipelines, schedule triggers & error handling routines." data-ar="تصميم مسارات أعمال متكاملة، المشغلات المجدولة، ومعالجة الأخطاء الذكية.">Architecting resilient 50+ enterprise pipelines, schedule triggers & error handling routines.</p>
+                                <div class="skill-tech-chips">
+                                    <span>50+ Pipelines</span>
+                                    <span>Sub-workflows</span>
+                                    <span>Cron Schedule</span>
+                                    <span>Error Loops</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>AI Automation</span>
-                                <div class="bar"><div class="fill" style="width: 94%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="AI Node Orchestration" data-ar="ربط عقد الذكاء الاصطناعي">AI Node Orchestration</h4>
+                                        <span class="skill-level-tag tag-emerald" data-en="Expert" data-ar="خبير">Expert</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Chaining AI Agents, custom JavaScript code nodes, vector query tools & dynamic loops." data-ar="دمج وكلاء الذكاء الاصطناعي، عقد JavaScript، وأدوات الاستعلام الحلقي.">Chaining AI Agents, custom JavaScript code nodes, vector query tools & dynamic loops.</p>
+                                <div class="skill-tech-chips">
+                                    <span>AI Agent Nodes</span>
+                                    <span>JS Code Node</span>
+                                    <span>Vector Tool</span>
+                                    <span>Item Loops</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Workflow Design</span>
-                                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Google Workspace & Telegram" data-ar="أتمتة أدوات العمل و Telegram">Google Workspace & Telegram</h4>
+                                        <span class="skill-level-tag tag-purple" data-en="Production" data-ar="تطبيق عملي">Production</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Automating Google Drive file monitors, Sheets live database, Calendar meetings & Telegram bots." data-ar="مراقبة مجلدات Google Drive، ربط Google Sheets، جدولة المواعيد وبوتات التلغرام.">Automating Google Drive file monitors, Sheets live database, Calendar meetings & Telegram bots.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Google Drive</span>
+                                    <span>Google Sheets</span>
+                                    <span>Telegram Bot</span>
+                                    <span>Gmail API</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>API Integration</span>
-                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Webhooks & Event Triggers" data-ar="الويب هوك وتدفق الأحداث">Webhooks & Event Triggers</h4>
+                                        <span class="skill-level-tag tag-amber" data-en="Advanced" data-ar="متقدم">Advanced</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Handling real-time inbound payloads, webhooks verification, data mapping & notification dispatch." data-ar="معالجة البيانات الواردة فوريًا، مطابقة البيانات، وإرسال التنبيهات المباشرة.">Handling real-time inbound payloads, webhooks verification, data mapping & notification dispatch.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Inbound Webhooks</span>
+                                    <span>Payload Transform</span>
+                                    <span>Status Alerts</span>
+                                    <span>REST Events</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Engineering & Tools -->
+                    <!-- Category 3: Development & Tools -->
                     <div class="skill-category-card">
                         <div class="category-header">
-                            <i class="fa-solid fa-code category-icon"></i>
-                            <h3 data-en="Development & Tools" data-ar="التطوير والأدوات">Development & Tools</h3>
+                            <div class="category-icon-box bg-emerald-glow">
+                                <i class="fa-solid fa-code category-icon"></i>
+                            </div>
+                            <div>
+                                <h3 data-en="Development & Engineering" data-ar="التطوير وهندسة البيانات">Development & Engineering</h3>
+                                <span class="category-badge" data-en="Technical Foundation" data-ar="الأساس البرمجي">Technical Foundation</span>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-pill">
-                                <span>Python</span>
-                                <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                        <div class="skill-cards-list">
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Python for AI & APIs" data-ar="بايثون للذكاء الاصطناعي">Python for AI & APIs</h4>
+                                        <span class="skill-level-tag tag-cyan" data-en="Advanced" data-ar="متقدم">Advanced</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Writing clean, modular scripts for AI data manipulation, REST clients, and backend automation." data-ar="كتابة أكواد بايثون قوية لمعالجة البيانات، ربط الـ APIs، وأتمتة العمليات.">Writing clean, modular scripts for AI data manipulation, REST clients, and backend automation.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Python 3</span>
+                                    <span>REST Clients</span>
+                                    <span>Data Handling</span>
+                                    <span>Scripts</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>REST APIs & Webhooks</span>
-                                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Vector Databases & Embeddings" data-ar="قواعد بيانات المتجهات">Vector Databases & Embeddings</h4>
+                                        <span class="skill-level-tag tag-emerald" data-en="Specialized" data-ar="تخصص متقدم">Specialized</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Index configuration, semantic similarity search, hybrid filtering & high-scale retrieval." data-ar="تهيئة فهارس المتجهات، البحث بالتشابه الدلالي، والتصفية واسترجاع المستندات.">Index configuration, semantic similarity search, hybrid filtering & high-scale retrieval.</p>
+                                <div class="skill-tech-chips">
+                                    <span>Pinecone</span>
+                                    <span>Cohere Embed</span>
+                                    <span>Cosine Distance</span>
+                                    <span>Namespaces</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Git & Version Control</span>
-                                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-link"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="REST APIs & JSON Protocols" data-ar="واجهات البرمجة REST APIs">REST APIs & JSON Protocols</h4>
+                                        <span class="skill-level-tag tag-purple" data-en="Advanced" data-ar="متقدم">Advanced</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="Designing HTTP queries, header auth, endpoint integration & complex schema transformations." data-ar="إعداد استدعاءات HTTP، التوثيق بالـ Headers، وربط الخدمات بتنسيقات JSON.">Designing HTTP queries, header auth, endpoint integration & complex schema transformations.</p>
+                                <div class="skill-tech-chips">
+                                    <span>HTTP Methods</span>
+                                    <span>JSON Parsing</span>
+                                    <span>Header Auth</span>
+                                    <span>Postman</span>
+                                </div>
                             </div>
-                            <div class="skill-pill">
-                                <span>Vector Databases</span>
-                                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+
+                            <div class="skill-item-card">
+                                <div class="skill-item-top">
+                                    <div class="skill-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="skill-meta">
+                                        <h4 class="skill-title" data-en="Technical Mentorship & Git" data-ar="التدريب التقني وإدارة النسخ">Technical Mentorship & Git</h4>
+                                        <span class="skill-level-tag tag-amber" data-en="3+ Years" data-ar="خبرة 3+ سنوات">3+ Years</span>
+                                    </div>
+                                </div>
+                                <p class="skill-item-desc" data-en="3+ years teaching 3,000+ engineers, Git version control, technical communication & documentation." data-ar="تدريب 3000+ مهندس وطالب، إدارة النسخ بـ Git، والشرح والتوثيق البرمجي المتقن.">3+ years teaching 3,000+ engineers, Git version control, technical communication & documentation.</p>
+                                <div class="skill-tech-chips">
+                                    <span>3000+ Mentored</span>
+                                    <span>Git / GitHub</span>
+                                    <span>AI Education</span>
+                                    <span>Documentation</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -403,16 +577,6 @@
                         </div>
                     </div>
 
-                    <!-- Output Console Log -->
-                    <div class="sim-console">
-                        <div class="console-header">
-                            <span><i class="fa-solid fa-terminal"></i> n8n Execution Console Log</span>
-                            <button id="clearConsoleBtn" class="btn-text">Clear</button>
-                        </div>
-                        <div class="console-body" id="consoleBody">
-                            <div class="log-line">[SYSTEM] n8n AI Agent Workflow Engine initialized. Press "Execute Workflow" to test.</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -421,55 +585,119 @@
         <section class="section projects-section" id="projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle" data-en="Featured Solutions" data-ar="مشاريع ومجموعات عمل">Featured Solutions</span>
-                    <h2 class="section-title" data-en="AI & Automation Projects" data-ar="مشاريع الذكاء الاصطناعي والأتمتة">AI & Automation Projects</h2>
+                    <span class="section-subtitle" data-en="Featured n8n Automations" data-ar="مشاريع n8n متميزة">Featured n8n Automations</span>
+                    <h2 class="section-title" data-en="AI Agent & Workflow Projects" data-ar="مشاريع وكلاء الذكاء الاصطناعي والأتمتة">AI Agent & Workflow Projects</h2>
+                    <p class="section-desc" data-en="Explore real-world autonomous AI workflows engineered with n8n, LLMs, external tool integrations, and custom database APIs." data-ar="استكشف مسارات عمل حقيقية لوكلاء الذكاء الاصطناعي تم تطويرها عبر n8n ونماذج اللغة وربط واجهات البرمجة APIs.">
+                        Explore real-world autonomous AI workflows engineered with n8n, LLMs, external tool integrations, and custom database APIs.
+                    </p>
                     <div class="title-underline"></div>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 1 -->
+                    <!-- Project 1: AI Agent for Smart Customer Support -->
                     <div class="project-card card-glass">
-                        <div class="project-badge"><i class="fa-solid fa-robot"></i> AI Agent</div>
-                        <h3 class="project-title" data-en="Autonomous Customer Support & Sales Agent" data-ar="وكيل خدمة عملاء ومبيعات مستقل">Autonomous Customer Support & Sales Agent</h3>
-                        <p class="project-desc" data-en="Designed an autonomous multi-agent system powered by n8n and LLMs that handles user support queries, retrieves real-time inventory via APIs, and qualifies sales leads." data-ar="بناء نظام وكلاء متعدد المهام يعتمد على n8n وLLMs للرد التلقائي على استفسارات العملاء وجلب البيانات المباشرة عبر APIs وتقييم المبيعات.">
-                            Designed an autonomous multi-agent system powered by n8n and LLMs that handles user support queries, retrieves real-time inventory via APIs, and qualifies sales leads.
-                        </p>
-                        <div class="project-tech">
-                            <span>n8n</span>
-                            <span>LLM</span>
-                            <span>RAG</span>
-                            <span>REST API</span>
-                            <span>Python</span>
+                        <div class="project-img-wrapper" data-modal="modal-support-agent">
+                            <img src="assets/n8n-customer-support-agent.jpg" alt="n8n AI Agent Smart Customer Support" class="project-img">
+                            <div class="img-overlay">
+                                <span class="overlay-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> <span data-en="Inspect Workflow" data-ar="معاينة المسار">Inspect Workflow</span></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-badge"><i class="fa-solid fa-headset"></i> <span data-en="n8n AI Support Agent" data-ar="وكيل n8n لخدمة العملاء">n8n AI Support Agent</span></div>
+                            <h3 class="project-title" data-en="AI Agent for Smart Customer Support & Sales" data-ar="وكيل ذكاء اصطناعي لخدمة العملاء والمبيعات الذكية">AI Agent for Smart Customer Support & Sales</h3>
+                            <p class="project-desc" data-en="Autonomous customer service workflow built on n8n that answers product inquiries in real-time, fetches dynamic stock data from Google Sheets, recommends products, detects buying intent, and automatically emails purchase details to the business owner via Gmail." data-ar="مسار عمل مستقل على n8n يجيب على استفسارات العملاء فورياً، ويجلب بيانات المنتجات مباشرة من Google Sheets، ويوصي بالمنتجات، ويكتشف نية الشراء، ويرسل تفاصيل الطلب تلقائياً للبائع عبر Gmail.">
+                                Autonomous customer service workflow built on n8n that answers product inquiries in real-time, fetches dynamic stock data from Google Sheets, recommends products, detects buying intent, and automatically emails purchase details to the business owner via Gmail.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Real-time Groq LLM reasoning & Simple Memory context" data-ar="تحليل ذكي بـ Groq LLM وسياق محادثة بـ Simple Memory">Real-time Groq LLM reasoning & Simple Memory context</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Zero-code inventory updates via Google Sheets tool" data-ar="تحديث المنتجات بسهولة عبر Google Sheets بدون تعديل الكود">Zero-code inventory updates via Google Sheets tool</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Automated purchase lead dispatch via Gmail API" data-ar="إرسال بيانات المبيعات والطلبات تلقائياً عبر Gmail API">Automated purchase lead dispatch via Gmail API</span></li>
+                            </ul>
+
+                            <div class="project-tech">
+                                <span><i class="fa-solid fa-diagram-project"></i> n8n</span>
+                                <span><i class="fa-solid fa-microchip"></i> Groq Chat Model</span>
+                                <span><i class="fa-solid fa-brain"></i> Simple Memory</span>
+                                <span><i class="fa-solid fa-table"></i> Google Sheets</span>
+                                <span><i class="fa-solid fa-envelope"></i> Gmail Tool</span>
+                            </div>
+
+                            <button class="btn btn-outline btn-sm btn-full view-workflow-btn" data-modal="modal-support-agent">
+                                <i class="fa-solid fa-eye"></i> <span data-en="View High-Res Workflow Diagram" data-ar="عرض مخطط مسار العمل بالكامل">View High-Res Workflow Diagram</span>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
+                    <!-- Project 2: AI Agent Automated Telegram Workflow -->
                     <div class="project-card card-glass">
-                        <div class="project-badge"><i class="fa-solid fa-diagram-project"></i> n8n Automation</div>
-                        <h3 class="project-title" data-en="Enterprise Lead Qualification & CRM Automation Pipeline" data-ar="مسار أتمتة إدارة العملاء والتقييم الالي">Enterprise Lead Qualification & CRM Automation Pipeline</h3>
-                        <p class="project-desc" data-en="Built an intelligent n8n workflow that parses incoming emails, evaluates company profile alignment using OpenAI prompt templates, and updates CRM records seamlessly." data-ar="تطوير مسار عمل n8n ذكي يحلل البريد الإلكتروني الوارد ويقيم ملائمة بيانات الشركات باستخدام أوامر OpenAI ويحدث بيانات الـ CRM بشكل فوري.">
-                            Built an intelligent n8n workflow that parses incoming emails, evaluates company profile alignment using OpenAI prompt templates, and updates CRM records seamlessly.
-                        </p>
-                        <div class="project-tech">
-                            <span>n8n</span>
-                            <span>OpenAI</span>
-                            <span>Webhooks</span>
-                            <span>HubSpot/Notion API</span>
+                        <div class="project-img-wrapper" data-modal="modal-telegram-agent">
+                            <img src="assets/n8n-telegram-workflow-agent.jpg" alt="n8n Telegram Automated Workflow AI Agent" class="project-img">
+                            <div class="img-overlay">
+                                <span class="overlay-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> <span data-en="Inspect Workflow" data-ar="معاينة المسار">Inspect Workflow</span></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-badge"><i class="fa-brands fa-telegram"></i> <span data-en="n8n Telegram Workflow" data-ar="أتمتة Telegram بـ n8n">n8n Telegram Workflow</span></div>
+                            <h3 class="project-title" data-en="Automated Operations & Team Assistant AI Agent" data-ar="مساعد التلغرام والأتمتة الذكية للمهام والفريق">Automated Operations & Team Assistant AI Agent</h3>
+                            <p class="project-desc" data-en="Multi-tool Telegram workflow agent that processes natural language requests, manages internal team databases, schedules meetings on Google Calendar, dispatches employee email alerts, and responds interactively directly inside Telegram." data-ar="وكيل ذكي متعدد الأدوات متصل بـ Telegram يحلل الطلبات الطبيعية، ويدير بيانات الموظفين، ويجدول المواعيد على Google Calendar، ويرسل تنبيهات البريد الإلكتروني، ويرد تفاعلياً على Telegram.">
+                                Multi-tool Telegram workflow agent that processes natural language requests, manages internal team databases, schedules meetings on Google Calendar, dispatches employee email alerts, and responds interactively directly inside Telegram.
+                            </p>
+
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Telegram Trigger & Interactive Bot Response tool" data-ar="مشغل Telegram وردود تفاعلية سريعة للمستخدم">Telegram Trigger & Interactive Bot Response tool</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Auto Calendar scheduling via Google Calendar API" data-ar="جدولة الأحداث والمواعيد تلقائياً بـ Google Calendar">Auto Calendar scheduling via Google Calendar API</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Employee DB Lookup (Sheets) & Gmail Notifications" data-ar="استعلام قاعدة بيانات الموظفين وإرسال إشعارات البريد">Employee DB Lookup (Sheets) & Gmail Notifications</span></li>
+                            </ul>
+
+                            <div class="project-tech">
+                                <span><i class="fa-solid fa-diagram-project"></i> n8n</span>
+                                <span><i class="fa-brands fa-telegram"></i> Telegram Bot</span>
+                                <span><i class="fa-solid fa-microchip"></i> Groq Chat Model</span>
+                                <span><i class="fa-solid fa-calendar-days"></i> Google Calendar</span>
+                                <span><i class="fa-solid fa-envelope"></i> Gmail API</span>
+                                <span><i class="fa-solid fa-table"></i> Google Sheets DB</span>
+                            </div>
+
+                            <button class="btn btn-outline btn-sm btn-full view-workflow-btn" data-modal="modal-telegram-agent">
+                                <i class="fa-solid fa-eye"></i> <span data-en="View High-Res Workflow Diagram" data-ar="عرض مخطط مسار العمل بالكامل">View High-Res Workflow Diagram</span>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
+                    <!-- Project 3: Autonomous Google Drive RAG Knowledge Base Assistant -->
                     <div class="project-card card-glass">
-                        <div class="project-badge"><i class="fa-solid fa-database"></i> RAG System</div>
-                        <h3 class="project-title" data-en="Custom Knowledge Base RAG Assistant" data-ar="مساعد البحث الذكي لقواعد المعرفة (RAG)">Custom Knowledge Base RAG Assistant</h3>
-                        <p class="project-desc" data-en="Created a Retrieval-Augmented Generation pipeline converting un-structured PDF documentation into vector embeddings for accurate, hallucination-free AI answers." data-ar="إنشاء نظام استرجاع معلومات ذكي يحول المستندات والكتيبات إلى المتجهات لتقديم إجابات موثوقة بدون هلاوس الذكاء الاصطناعي.">
-                            Created a Retrieval-Augmented Generation pipeline converting un-structured PDF documentation into vector embeddings for accurate, hallucination-free AI answers.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Vector DB</span>
-                            <span>LangChain</span>
-                            <span>Prompt Engineering</span>
+                        <div class="project-img-wrapper" data-modal="modal-rag-assistant">
+                            <img src="assets/n8n-rag-drive-agent.jpg" alt="Autonomous Google Drive RAG Knowledge Assistant" class="project-img">
+                            <div class="img-overlay">
+                                <span class="overlay-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> <span data-en="Inspect Workflow" data-ar="معاينة المسار">Inspect Workflow</span></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-badge"><i class="fa-solid fa-brain"></i> <span data-en="n8n RAG & Pinecone Vector Store" data-ar="مساعد RAG وقاعدة متجهات Pinecone">n8n RAG & Pinecone Vector Store</span></div>
+                            <h3 class="project-title" data-en="Autonomous Google Drive RAG Knowledge Assistant" data-ar="مساعد الملفات الذكي من Google Drive والإجابة على الأسئلة (RAG)">Autonomous Google Drive RAG Knowledge Assistant</h3>
+                            <p class="project-desc" data-en="Autonomous pipeline that periodically monitors Google Drive folders for new documents, chunks and embeds them into Pinecone Vector Store via Cohere, and powers an autonomous Groq AI Agent with conversation memory to answer any question accurately." data-ar="نظام مؤتمت يراقب مجلدات Google Drive دورياً للتحقق من أي ملفات جديدة، ثم يحمّلها ويعالجها ويخزنها كمتجهات في Pinecone عبر Cohere، ويستخدم نموذج Groq مع وكيل ذكي للرد الفوري على استفساراتك بدقة بدون هلاوس.">
+                                Autonomous pipeline that periodically monitors Google Drive folders for new documents, chunks and embeds them into Pinecone Vector Store via Cohere, and powers an autonomous Groq AI Agent with conversation memory to answer any question accurately.
+                            </p>
+
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Hourly automated Google Drive scanning & Sheet logging" data-ar="فحص ومراقبة تلقائية دورية كل ساعة لمجلدات Google Drive">Hourly automated Google Drive scanning & Sheet logging</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Semantic chunking & vector indexing (Cohere + Pinecone)" data-ar="تجزئة ذكية وفهرسة متجهات فائقة الدقة بـ Cohere و Pinecone">Semantic chunking & vector indexing (Cohere + Pinecone)</span></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <span data-en="Groq-powered conversational AI Agent with memory context" data-ar="وكيل ذكي بـ Groq LLM وذاكرة محادثة للإجابة الدقيقة دون هلاوس">Groq-powered conversational AI Agent with memory context</span></li>
+                            </ul>
+
+                            <div class="project-tech">
+                                <span><i class="fa-solid fa-diagram-project"></i> n8n</span>
+                                <span><i class="fa-brands fa-google-drive"></i> Google Drive</span>
+                                <span><i class="fa-solid fa-database"></i> Pinecone</span>
+                                <span><i class="fa-solid fa-cubes"></i> Cohere Embed</span>
+                                <span><i class="fa-solid fa-microchip"></i> Groq LLM</span>
+                                <span><i class="fa-solid fa-robot"></i> AI Agent</span>
+                            </div>
+
+                            <button class="btn btn-outline btn-sm btn-full view-workflow-btn" data-modal="modal-rag-assistant">
+                                <i class="fa-solid fa-eye"></i> <span data-en="View High-Res Workflow Diagram" data-ar="عرض مخطط مسار العمل بالكامل">View High-Res Workflow Diagram</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -509,10 +737,10 @@
                     </div>
 
                     <div class="chat-suggestions">
-                        <button class="suggest-btn" data-question="What is Merhan's background and experience?">🎓 What is Merhan's experience?</button>
-                        <button class="suggest-btn" data-question="How does Merhan use n8n for AI Automation?">⚙️ How does she use n8n for AI?</button>
-                        <button class="suggest-btn" data-question="What are Merhan's core skills?">🛠️ Core Skills overview</button>
-                        <button class="suggest-btn" data-question="How can I contact Merhan for a project?">📩 How to contact for a project?</button>
+                        <button class="suggest-btn" data-question="What is Merhan's background and experience?" data-en="🎓 What is Merhan's experience?" data-ar="🎓 ما هي خبرات مرهان ومؤهلاتها؟">🎓 What is Merhan's experience?</button>
+                        <button class="suggest-btn" data-question="How does Merhan use n8n for AI Automation?" data-en="⚙️ How does she use n8n for AI?" data-ar="⚙️ كيف تستخدم مرهان n8n لأتمتة الذكاء الاصطناعي؟">⚙️ How does she use n8n for AI?</button>
+                        <button class="suggest-btn" data-question="What are Merhan's core skills?" data-en="🛠️ Core Skills overview" data-ar="🛠️ نظرة عامة على المهارات الأساسية">🛠️ Core Skills overview</button>
+                        <button class="suggest-btn" data-question="How can I contact Merhan for a project?" data-en="📩 How to contact for a project?" data-ar="📩 كيف أتواصل مع مرهان لبدء مشروع؟">📩 How to contact for a project?</button>
                     </div>
 
                     <form class="chat-input-area" id="chatForm">
@@ -618,37 +846,45 @@
                     </div>
 
                     <div class="contact-form-card card-glass">
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://formsubmit.co/merhanmahmoud90@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Portfolio Message from Website">
                             <div class="form-group">
                                 <label for="name" data-en="Your Name" data-ar="الاسم الكريم">Your Name</label>
-                                <input type="text" id="name" required placeholder="e.g. Sarah Ahmed">
+                                <input type="text" id="name" name="name" required placeholder="e.g. Sarah Ahmed">
                             </div>
 
                             <div class="form-group">
                                 <label for="email" data-en="Your Email" data-ar="البريد الإلكتروني">Your Email</label>
-                                <input type="email" id="email" required placeholder="name@company.com">
+                                <input type="email" id="email" name="email" required placeholder="name@company.com">
                             </div>
 
                             <div class="form-group">
                                 <label for="subject" data-en="Project / Inquiry Type" data-ar="نوع الاستفسار / المشروع">Project / Inquiry Type</label>
-                                <select id="subject" class="custom-select">
-                                    <option value="AI Agent Development">AI Agent Development</option>
-                                    <option value="n8n Workflow Automation">n8n Workflow Automation</option>
-                                    <option value="LLM / RAG Integration">LLM / RAG Integration</option>
-                                    <option value="AI & Code Teaching / Mentorship">AI & Code Teaching / Mentorship</option>
-                                    <option value="Research & Other">Research & Other</option>
+                                <select id="subject" name="subject" class="custom-select">
+                                    <option value="AI Agent" data-en="AI Agent" data-ar="AI Agent (وكيل ذكاء اصطناعي)">AI Agent</option>
+                                    <option value="Researcher" data-en="Researcher" data-ar="Researcher (باحث / تعاون بحثي)">Researcher</option>
+                                    <option value="Other" data-en="Other" data-ar="Other (أخرى)">Other</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
-                                <textarea id="message" rows="4" required placeholder="Describe your automation goal or AI requirement..."></textarea>
+                                <textarea id="message" name="message" rows="4" required placeholder="Describe your automation goal or AI requirement..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-full">
+                            <button type="submit" id="submitContactBtn" class="btn btn-primary btn-full">
                                 <i class="fa-solid fa-paper-plane"></i> <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
                             </button>
                             <div class="form-response" id="formResponse"></div>
+
+                            <div class="form-direct-mail">
+                                <span data-en="Or send an email directly:" data-ar="أو يمكنك المراسلة مباشرة عبر:">Or send an email directly:</span>
+                                <a href="mailto:merhanmahmoud90@gmail.com" class="direct-mail-badge" title="Send direct email">
+                                    <i class="fa-solid fa-envelope"></i> <span>merhanmahmoud90@gmail.com</span>
+                                </a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -656,12 +892,24 @@
         </section>
     </main>
 
+    <!-- High-Res Workflow Lightbox Modal -->
+    <div class="project-modal-overlay" id="projectModal" aria-hidden="true">
+        <div class="project-modal-card card-glass">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-scroll-content" id="modalBody">
+                <!-- Dynamic Modal Content populated by JS -->
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
                 <a href="#" class="nav-brand">
-                    <span class="brand-icon"><i class="fa-solid fa-brain"></i></span>
+                    <img src="assets/logo.png" alt="Merhan Mahmoud Logo" class="brand-logo">
                     <span class="brand-text">Merhan<span class="brand-accent">.AI</span></span>
                 </a>
                 <p data-en="Architecting Intelligent AI Agents and Automated n8n Workflows for maximum operational excellence." data-ar="بناء وتصميم وكلاء ذكاء اصطناعي ومسارات عمل n8n ذكية لتحقيق أقصى كفاءة تشغيلية.">
@@ -669,7 +917,7 @@
                 </p>
             </div>
             <div class="footer-copy">
-                &copy; <span id="year">2026</span> Merhan Mahmoud. All rights reserved. Built with AI & Passion.
+                &copy; 2026 Merhan Mahmoud | AI Engineer & AI Solutions Developer
             </div>
         </div>
     </footer>
