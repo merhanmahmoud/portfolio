@@ -430,8 +430,8 @@ function initAIAgentChat() {
                 answer = isAr ? (matchedObj.responseAr || matchedObj.response) : (matchedObj.response || matchedObj.responseAr);
             } else {
                 answer = isAr 
-                    ? "ميرهان محمود متخصصة في هندسة وكلاء الذكاء الاصطناعي (AI Agents)، أتمتة n8n، وتطبيقات النماذج اللغوية (LLMs). يمكنك التواصل معها مباشرة لمناقشة متطلبات مشروعك!"
-                    : "Merhan Mahmoud is specialized in AI Agents, n8n automation, and LLM engineering. Feel free to contact her directly to discuss your specific custom project requirements!";
+                    ? "أنا مساعد ذكي مخصص للإجابة عن الاستفسارات المتعلقة بالمهندسة **ميرهان محمود** فقط (خبراتها، مشاريعها في الذكاء الاصطناعي والأتمتة، مهاراتها، وطرق التواصل معها). ليس لدي معلومات حول مواضيع أخرى خارج هذا النطاق. يسعدني الإجابة عن أي سؤال يخص ميرهان!"
+                    : "I am an AI assistant specifically dedicated to answering questions about **Merhan Mahmoud** (her background, AI & n8n automation projects, core skills, and collaboration opportunities). I do not have information on other topics outside this scope. Feel free to ask anything about Merhan!";
             }
             
             appendMessage(answer, false);
