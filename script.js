@@ -340,42 +340,42 @@ function initAIAgentChat() {
 
     const qaDatabase = [
         {
-            keywords: ['how does merhan use n8n', 'n8n for ai automation', 'how does she use n8n', 'use n8n', 'n8n for ai', 'n8n automation', 'كيف تستخدم مرهان n8n', 'كيف تستخدم n8n', 'أتمتة n8n', 'مشاريع n8n'],
+            keywords: ['how does merhan use n8n', 'n8n for ai automation', 'how does she use n8n', 'use n8n', 'n8n automation', 'كيف تستخدم ميرهان n8n', 'كيف تستخدم n8n', 'أتمتة n8n', 'مشاريع n8n', 'n8n'],
             response: "Merhan leverages **n8n** as an enterprise orchestration platform to engineer autonomous AI agents and intelligent automation pipelines. She seamlessly connects Large Language Models (LLMs), Vector Databases, and external REST APIs with multi-step reasoning, persistent memory, and dynamic tool-calling to build scalable, high-impact business workflows.",
             responseAr: "تعتمد ميرهان على منصة **n8n** كبنية تحتية متطورة لتصميم وهندسة وكلاء الذكاء الاصطناعي (AI Agents) ومسارات العمل المؤتمتة والشاملة. وتقوم بربط نماذج اللغة الكبيرة (LLMs) وقواعد بيانات المتجهات وواجهات الـ APIs مع دعم اتخاذ القرار، الذاكرة المستمرة، واستدعاء الأدوات ذاتياً لبناء حلول أتمتة عملية وعالية الكفاءة."
         },
         {
-            keywords: ['background', 'experience', 'who', 'about', 'خبرة', 'عن', 'من هي'],
+            keywords: ['من هي ميرهان', 'مين ميرهان', 'عن ميرهان', 'خبرة ميرهان', 'خبرات ميرهان', 'خلفية ميرهان', 'مؤهلات ميرهان', 'من انت', 'من أنت', 'مين انت', 'عرفني بنفسك', 'سيرتك الذاتية', 'who is merhan', 'about merhan', 'tell me about merhan', 'merhan background', 'who are you', 'tell me about yourself', 'your background'],
             response: "Merhan Mahmoud is an AI Engineer and Master's Researcher in Artificial Intelligence with over 3 years of experience teaching Programming and AI. She specializes in building autonomous AI Agents, n8n automations, and LLM applications.",
             responseAr: "ميرهان محمود هي مهندسة ذكاء اصطناعي وباحثة ماجستير في مجال الذكاء الاصطناعي مع خبرة تزيد عن 3 سنوات في تدريس البرمجة والذكاء الاصطناعي، ومتخصصة في بناء وكلاء الذكاء الاصطناعي، أتمتة n8n، وتطبيقات نماذج اللغة الكبيرة (LLMs)."
         },
         {
-            keywords: ['customer support', 'support agent', 'sheets', 'gmail', 'مبيعات', 'خدمة عملاء'],
+            keywords: ['customer support', 'support agent', 'خدمة عملاء', 'دعم العملاء', 'مساعد خدمة العملاء', 'وكيل خدمة العملاء'],
             response: "Merhan built a full n8n Smart Customer Support AI Agent! It connects Webhooks with Groq LLM, Simple Memory, Google Sheets (for real-time stock lookup without code changes), and automatically dispatches purchase lead emails via Gmail.",
             responseAr: "طوّرت ميرهان وكيلاً ذكياً لخدمة العملاء في n8n يربط الويب هوك بنموذج Groq LLM، وذاكرة المحادثة، وجداول Google Sheets للاستعلام عن المنتجات فورياً، مع إرسال تفاصيل الطلبات تلقائياً عبر Gmail."
         },
         {
-            keywords: ['telegram', 'calendar', 'workflow agent', 'تلغرام', 'مهام', 'تقويم'],
+            keywords: ['telegram agent', 'telegram bot', 'بوت تلغرام', 'مساعد تلغرام', 'مساعد التلغرام', 'أتمتة تلغرام'],
             response: "She engineered an Automated Telegram Operations Assistant in n8n! It connects Telegram triggers with Groq Chat Model, queries employee data from Google Sheets, schedules meetings on Google Calendar, and alerts employees via Gmail.",
             responseAr: "صممت ميرهان مساعد تلغرام ذكي للعمليات في n8n يربط بوت التلغرام بنموذج Groq، ويستعلم بيانات الموظفين من Google Sheets، ويجدول المواعيد تلقائياً على Google Calendar ويرسل تنبيهات البريد."
         },
         {
-            keywords: ['rag', 'google drive', 'pinecone', 'cohere', 'knowledge base', 'درايف', 'ملفات', 'مستندات', 'بحث ذكي'],
+            keywords: ['rag drive', 'google drive rag', 'مساعد درايف', 'بحث في درايف', 'مستندات درايف', 'قاعدة معرفة', 'pinecone', 'cohere'],
             response: "Merhan engineered an Autonomous Google Drive RAG Knowledge Assistant in n8n! It monitors Google Drive folders, ingests new files, splits & embeds them into Pinecone Vector Store using Cohere, and connects to a Groq AI Agent with conversation memory for instant, hallucination-free answers.",
             responseAr: "طوّرت ميرهان نظام RAG ذكي ومستقل لمستندات Google Drive في n8n يراقب المجلدات دورياً، ويقوم بتجزئة وفهرسة الملفات كمتجهات في Pinecone عبر Cohere، ويربطها بنموذج Groq للإجابة الدقيقة دون هلاوس."
         },
         {
-            keywords: ['skills', 'tech', 'python', 'llm', 'مهارات', 'تقنيات'],
+            keywords: ['مهارات ميرهان', 'مهاراتك', 'ما هي مهاراتك', 'ما هي مهارات ميرهان', 'تقنيات ميرهان', 'المهارات الأساسية', 'core skills', 'what are your skills', 'skills of merhan', 'merhan skills'],
             response: "Her core skills include: Autonomous AI Agents, n8n Workflow Automation, RAG Pipelines, Large Language Models (LLMs), Prompt Engineering, Python, REST APIs, and Webhooks.",
             responseAr: "تشمل مهاراتها الأساسية: وكلاء الذكاء الاصطناعي (AI Agents)، أتمتة مسارات العمل بـ n8n، أنظمة الـ RAG، نماذج اللغة الكبيرة (LLMs)، هندسة الأوامر (Prompt Engineering)، بايثون، واجهات البرمجة REST APIs، والـ Webhooks."
         },
         {
-            keywords: ['contact', 'hire', 'email', 'project', 'تواصل', 'عمل', 'مشروع'],
+            keywords: ['تواصل مع ميرهان', 'أتواصل مع ميرهان', 'كيف أتواصل', 'كيف اتواصل', 'طرق التواصل', 'إيميل ميرهان', 'ايميل ميرهان', 'وظف ميرهان', 'توظيف ميرهان', 'contact merhan', 'hire merhan', 'how to contact', 'reach out to merhan', 'merhan email'],
             response: "You can reach out directly via email at merhanmahmoud90@gmail.com or connect via LinkedIn (www.linkedin.com/in/merhan-mahmoud)!",
             responseAr: "يمكنك التواصل معها مباشرة عبر البريد الإلكتروني merhanmahmoud90@gmail.com أو عبر لينكد إن (linkedin.com/in/merhan-mahmoud)!"
         },
         {
-            keywords: ['teaching', 'instructor', 'students', 'تدريس', 'تعليم'],
+            keywords: ['تدريس ميرهان', 'تدريب ميرهان', 'كم طالب', 'كم مهندس', 'خبرة التدريس', 'teaching experience', 'students mentored', 'students taught'],
             response: "Merhan has over 3 years of experience teaching programming and AI principles to over 3,000+ students and engineers, making complex concepts easy to understand and implement.",
             responseAr: "تمتلك ميرهان خبرة تزيد عن 3 سنوات في تدريس البرمجة ومفاهيم الذكاء الاصطناعي لأكثر من 3000+ طالب ومهندس، مع تبسيط المفاهيم المعقدة وتطبيقها عملياً."
         }
